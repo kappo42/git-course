@@ -115,9 +115,9 @@ Rows rows;
           // check if this value is below our threshold 50 meters
           if(meters<50.00 && ((*it_locationsL).id)!=((*it_tmplocL).id)){
               // insertion in  map of adjacencies
-              list_adjacencies.push_back((*it_tmplocL).id);
+              list_adjacencies.push_back((*it_tmplocL).id); 
           }
-          
+         else return; 
       }
        // actual insertion in map
        grcM.insert(pair <int, list <int> >((*it_locationsL).id,list_adjacencies));
