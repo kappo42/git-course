@@ -39,6 +39,7 @@ struct location{
     double lat;                  // Latitute  - Geo
     double lon;                  // Longitude - Geo
     double alt;                  // Altitude  - Geo
+    int pos;
     
     location(int A, double B, double C, double D): id(A), lat(B), lon(C), alt(D){}
 };
